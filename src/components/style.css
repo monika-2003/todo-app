@@ -1,0 +1,118 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.box{
+    height: 500px;
+    width: 400px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    padding: 30px 20px;
+    box-shadow: 3px 8px 15px grey;
+    transition: 2s;
+    overflow-y: auto;
+}
+
+.box input{
+    height: 40px;
+    width: 280px;
+    border: 0.5px solid grey;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: 2px;
+    transition: 2s;
+}
+.box .btn{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(155, 37, 155);
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 5px;
+    border-radius: 2px;
+    
+}
+.box:hover{
+    border: 1px solid rgb(189, 188, 188);
+    box-shadow: none;
+    transition: 2s;
+}
+.box:hover .inp{
+    box-shadow: 2px 5px 8px grey;
+    border: none;
+}
+.inp:focus{
+    outline: none;
+    transition: 2s;
+}
+
+.box:hover .btn{
+    box-shadow: 2px 5px 8px grey;
+    cursor: pointer;
+    transition: 2s;
+}
+.btn:focus{
+    background-color: purple;
+    box-shadow: 2px 5px 8px rgb(248, 246, 246);
+}
+#list{
+    padding-left: 20px;
+    text-align: left;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+#list p{
+    background-color: rgba(230, 228, 228, 0.795);
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 30px;
+    width: 300px;
+    display: inline-block;
+}
+
+
+.box:hover #list p {
+    box-shadow: 2px 5px 8px grey;
+    transition: 2s;
+}
+.box:hover #cross {
+    box-shadow: 2px 5px 8px grey;
+    transition: 2s;
+}
+
+#cross {
+    background-color: rgba(230, 228, 228, 0.795);
+    padding-top: 8px;
+    margin-left: 5px;
+    font-weight: 600;
+    width: 30px;
+    display: inline-block;
+    height: 35px;
+    align-items: center;
+}
+
+#inner-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width : 500px) {
+    .box{
+        width: 300px;
+    }
+    .box input{
+        width: 200px;
+    }
+}
